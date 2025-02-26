@@ -1,0 +1,148 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    overflow-y: auto; /* Allows scrolling if needed */
+}
+
+/* Form Container */
+.box {
+    width: 350px;
+    padding: 40px;
+    background: #191919;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Ensure headings are visible */
+.box h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Text */
+.box p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Hyperlinks */
+.box a {
+    color: #2ecc71;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+/* Input Fields */
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"],
+.box input[type="number"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 12px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+/* Submit Button */
+.box input[type="submit"] {
+    border: 0;
+    background: #2ecc71;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 12px;
+    width: 250px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #27ae60;
+}
+
+/* Keep me signed in Checkbox */
+.box input[type="checkbox"] + label {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Services List Styling */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Space between items */
+    margin-top: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+.services-list label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+}
+
+/* Fixing Overflow Issues */
+.box {
+    max-height: 90vh;
+    overflow-y: auto; /* Enables scrolling if content is too long */
+}
+
+/* Adjust top margin to ensure heading & links show */
+.box h1,
+.box p {
+    margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .box input[type="text"],
+    .box input[type="email"],
+    .box input[type="password"],
+    .box input[type="number"],
+    .box input[type="submit"] {
+        width: 90%;
+    }
+}
