@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($stmt->execute()) {
                 $success = "Vehicle Owner registration successful!";
-                header("location:mechanic_dashboard.php");
+                header("location:user_dashboard.php");
             } else {
                 $error = "Error: " . $stmt->error;
             }

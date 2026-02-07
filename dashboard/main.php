@@ -97,6 +97,7 @@ if (!isset($_SESSION['email'])) {
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="ajax.php">Search a Mechanic</a></li>
+          <li class="nav-item"><a class="nav-link" href="../loginup/ai_diagnosis.php" style="color: #2ecc71 !important; font-weight: bold;">AI Diagnosis</a></li>
           <li class="nav-item"><a class="nav-link" href="../loginup/booking.php">Book Mechanic</a></li>
           <li class="nav-item"><a class="nav-link" href="../loginup/user_dashboard.php">View Bookings</a></li>
           <li class="nav-item dropdown">

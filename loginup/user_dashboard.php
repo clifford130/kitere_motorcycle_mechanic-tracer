@@ -116,6 +116,7 @@ $result = $stmt->get_result();
     <a href="../index.html" class="logo">KENYA VEHICLE MECHANIC TRACER</a>
     <ul>
        <li><a href="../dashboard/main.php">Homepage</a></li>
+       <li><a href="ai_diagnosis.php" style="color: #2ecc71; font-weight: bold;">AI Diagnosis</a></li>
        <li><a href="booking.php">Book mechanic</a></li>
        
        <!-- <li><a href="logout.php">Logout</a></li> -->
