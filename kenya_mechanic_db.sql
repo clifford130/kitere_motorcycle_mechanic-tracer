@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `kitere_mechanic_db`
+-- Database: `kenya_mechanic_db`
 --
-CREATE DATABASE IF NOT EXISTS `kitere_mechanic_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `kitere_mechanic_db`;
+CREATE DATABASE IF NOT EXISTS `kenya_mechanic_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `kenya_mechanic_db`;
 
 -- --------------------------------------------------------
 
@@ -100,9 +100,9 @@ CREATE TABLE `mechanics` (
 
 INSERT INTO `mechanics` (`id`, `email`, `full_name`, `phone_number`, `garage_name`, `experience`, `latitude`, `longitude`, `services_offered`, `password`, `created_at`) VALUES
 (2, 'cliffordonchomba483@gmail.com', 'Clifford', '0710698450', 'auto mechanic', 4, -0.82552500, 34.60957600, 'Engine Repair', '$2y$10$yJdxsEubiVMaIzCIuE616e2nUPXAALjznxx/nLirmVespeBmH42Mi', '2025-02-21 11:38:53'),
-(4, 'jay1@gmail.com', 'sean', '+254710698450', 'kitere', 2, -0.82561597, 34.60953505, 'Engine Repair', '$2y$10$urQe4sfbCmzAVwbtGSb6ueznpvaYWeKBWrQ5lc2WO3rAdS8ZUnojy', '2025-02-25 13:17:52'),
-(3, 'jay@gmail.com', 'sean', '+254710698450', 'kitere', 2, -0.82561633, 34.60963971, 'Oil Change, Tire Replacement, Chain Lubrication', '$2y$10$tUZyMEkW9XjGQSseaXL80eenAnW83BA7KO10aE.xmfx5ZvDHIRuwO', '2025-02-25 13:14:41'),
-(5, 'rebecca1@gmail.com', 'rebeccah', '0719009099', 'motorcycle clini', 3, -0.82561935, 34.60956453, 'Oil Change, Engine Repair', '$2y$10$b7gUk/yA/JvJ0xWPSj3yLuxE/PfOY3DlojoiZEo7eMonm.FvCA9p2', '2025-02-26 15:24:53');
+(4, 'jay1@gmail.com', 'sean', '+254710698450', 'kenya', 2, -0.82561597, 34.60953505, 'Engine Repair', '$2y$10$urQe4sfbCmzAVwbtGSb6ueznpvaYWeKBWrQ5lc2WO3rAdS8ZUnojy', '2025-02-25 13:17:52'),
+(3, 'jay@gmail.com', 'sean', '+254710698450', 'kenya', 2, -0.82561633, 34.60963971, 'Oil Change, Tire Replacement, Chain Lubrication', '$2y$10$tUZyMEkW9XjGQSseaXL80eenAnW83BA7KO10aE.xmfx5ZvDHIRuwO', '2025-02-25 13:14:41'),
+(5, 'rebecca1@gmail.com', 'rebeccah', '0719009099', 'vehicle clini', 3, -0.82561935, 34.60956453, 'Oil Change, Engine Repair', '$2y$10$b7gUk/yA/JvJ0xWPSj3yLuxE/PfOY3DlojoiZEo7eMonm.FvCA9p2', '2025-02-26 15:24:53');
 
 -- --------------------------------------------------------
 
@@ -159,7 +159,7 @@ CREATE TABLE `users` (
   `full_name` varchar(255) NOT NULL,
   `phone_number` varchar(20) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `role` enum('motorcyclist','admin') NOT NULL DEFAULT 'motorcyclist',
+  `role` enum('vehicle_owner','admin') NOT NULL DEFAULT 'vehicle_owner',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -168,8 +168,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `full_name`, `phone_number`, `password`, `role`, `created_at`) VALUES
-(3, 'cliffordisaboke1@gmail.com', 'clifford', '0710698450', '$2y$10$fuHZAfmMnwyiksiSy3IJ0uZEp9VrCeFPj.WF6jfZYHipCtUbV1xJy', 'motorcyclist', '2025-02-21 11:25:14'),
-(8, 'sean11@gmail.com', 'sean Kingstone', '+254710698450', '$2y$10$Hio1Rq9qU/ypcBH5pV2p9eS0/Q9z9CHThH2uiV3A5DEElog2XlVHe', 'motorcyclist', '2025-02-26 13:46:13');
+(3, 'cliffordisaboke1@gmail.com', 'clifford', '0710698450', '$2y$10$fuHZAfmMnwyiksiSy3IJ0uZEp9VrCeFPj.WF6jfZYHipCtUbV1xJy', 'vehicle_owner', '2025-02-21 11:25:14'),
+(8, 'sean11@gmail.com', 'sean Kingstone', '+254710698450', '$2y$10$Hio1Rq9qU/ypcBH5pV2p9eS0/Q9z9CHThH2uiV3A5DEElog2XlVHe', 'vehicle_owner', '2025-02-26 13:46:13');
 
 --
 -- Indexes for dumped tables

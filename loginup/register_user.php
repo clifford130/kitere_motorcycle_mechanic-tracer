@@ -36,11 +36,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $password = password_hash($password_raw, PASSWORD_BCRYPT);
 
             // Insert user into users table 
-            $stmt = $conn->prepare("INSERT INTO users (email, full_name, phone_number, password, role) VALUES (?, ?, ?, ?, 'motorcyclist')");
+            $stmt = $conn->prepare("INSERT INTO users (email, full_name, phone_number, password, role) VALUES (?, ?, ?, ?, 'vehicle_owner')");
             $stmt->bind_param("ssss", $email, $full_name, $phone, $password);
 
             if ($stmt->execute()) {
-                $success = "Motorcyclist registration successful!";
+                $success = "Vehicle Owner registration successful!";
                 header("location:mechanic_dashboard.php");
             } else {
                 $error = "Error: " . $stmt->error;
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>Register as Motorcycle Owner</title>
+    <title>Register as Vehicle Owner</title>
     <link rel="stylesheet" href="style.css">
     <script src="validation.js"></script>
     <style>
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <!-- Main content -->
   <div id="main-content">
     <form class="box form-animate" id="userForm" action="register_user.php" method="post" onsubmit="return validateUserForm();">
-        <h2 class="started">Join as Motorcycle Owner</h2>
+        <h2 class="started">Join as Vehicle Owner</h2>
         
         <!-- Display error or success message -->
         <?php if (!empty($error)): ?>

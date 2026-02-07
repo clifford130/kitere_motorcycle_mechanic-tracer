@@ -90,7 +90,7 @@ if (!isset($_SESSION['email'])) {
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">KITERE MOTORCYCLE MECHANIC TRACER</a>
+      <a class="navbar-brand" href="../index.html">KENYA VEHICLE MECHANIC TRACER</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
       </button>

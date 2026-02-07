@@ -246,7 +246,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <div id="main-content">
     <form class="box form-animate" id="mechanicForm" action="register_mechanic.php" method="post" onsubmit="return validateMechanicForm();">
       <h1 class="started">Join as a Mechanic or</h1>
-      <p><a href="./register_user.php">Register as Motorcyclist</a> <span style="color: white;">or</span> <a href="./index.php">Login</a></p>
+      <p><a href="./register_user.php">Register as Vehicle Owner</a> <span style="color: white;">or</span> <a href="./index.php">Login</a></p>
 
       <!-- Display error or success message -->
       <?php if (!empty($error)): ?>
@@ -280,7 +280,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label><input type="checkbox" name="services[]" value="Engine Repair"> Engine Repair</label>
         <label><input type="checkbox" name="services[]" value="Tire Replacement"> Tire Replacement</label>
         <label><input type="checkbox" name="services[]" value="Brake Adjustment"> Brake Adjustment</label>
-        <label><input type="checkbox" name="services[]" value="Chain Lubrication"> Chain Lubrication</label>
+        <label><input type="checkbox" name="services[]" value="Electrical Diagnostics"> Electrical Diagnostics</label>
         <label><input type="checkbox" name="services[]" value="Battery Replacement"> Battery Replacement</label>
       </div>
 

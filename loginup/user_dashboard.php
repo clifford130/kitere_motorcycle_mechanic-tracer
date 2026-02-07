@@ -113,7 +113,7 @@ $result = $stmt->get_result();
   <!-- Main content -->
   <div id="main-content">
 <nav>
-    <a href="../index.html" class="logo">KITERE MOTORCYCLE MECHANIC TRACER</a>
+    <a href="../index.html" class="logo">KENYA VEHICLE MECHANIC TRACER</a>
     <ul>
        <li><a href="../dashboard/main.php">Homepage</a></li>
        <li><a href="booking.php">Book mechanic</a></li>
