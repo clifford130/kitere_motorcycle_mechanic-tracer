@@ -184,7 +184,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p style="color: rgb(228, 23, 23);">Not registered yet? 
             <select onchange="redirectToSignup(this)">
                 <option value="">Create an account as...</option>
-                <option value="./register_user.php">Motorcyclist</option>
+                <option value="./register_user.php">Vehicle Owner</option>
                 <option value="./register_mechanic.php">Mechanic</option>
             </select>
         </p>

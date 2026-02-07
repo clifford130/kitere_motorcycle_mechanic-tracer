@@ -227,7 +227,7 @@ include '..//loginup/db_connect.php';
    
 <!-- Navigation Bar -->
 <nav>
-    <a href="./main.php" class="logo">KITERE MOTORCYCLE MECHANIC TRACER</a>
+    <a href="./main.php" class="logo">KENYA VEHICLE MECHANIC TRACER</a>
     <ul>
        <li><a href="main.php">Homepage</a></li>
        <li><a href="..//loginup/booking.php">Book mechanic</a></li>

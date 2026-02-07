@@ -2,7 +2,7 @@
 $servername = "localhost"; 
 $username = "root";
 $password = ""; 
-$dbname = "kitere_mechanic_db"; 
+$dbname = "kenya_mechanic_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
